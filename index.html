@@ -13,13 +13,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container">
-          
-              <a class="navbar-brand" href="#home">
+            <a class="navbar-brand" href="#home">
                 <i class="fas fa-cog me-2"></i>MAV Egypt
             </a>
-
-            
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,9 +40,6 @@
             </div>
         </div>
     </nav>
-    <h3>
-        Welcome to MAV Egypt for Valves - Your Trusted Partner in Industrial Valve Solutions Since 1998
-    </h3>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -295,6 +288,7 @@
     </section>
 
     <!-- Contact Section -->
+     <!---
     <section id="contact" class="contact-section">
         <div class="container">
             <h2 class="section-title text-white">Get In Touch</h2>
@@ -354,6 +348,32 @@
             </div>
         </div>
     </section>
+-->
+
+    <!-- Floating Contact Widget -->
+    <div class="floating-contact-widget">
+        <div class="contact-toggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="contact-options">
+            <a href="https://wa.me/201113911199" target="_blank" class="contact-item whatsapp" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+            <a href="mailto:info@mavegypt.net" class="contact-item email" title="Email">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+            </a>
+            <a href="skype:shadyhowedy?chat" class="contact-item skype" title="Skype">
+                <i class="fab fa-skype"></i>
+                <span>Skype</span>
+            </a>
+            <a href="https://facebook.com/mavegypt" target="_blank" class="contact-item facebook" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+                <span>Facebook</span>
+            </a>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -377,8 +397,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script>
-
-           // Certificate image modal functionality (for slider images)
+        // Certificate image modal functionality (for slider images)
         const certImagesSlider = document.querySelectorAll('.cert-image-slider');
         const certModal = new bootstrap.Modal(document.getElementById('certModal'));
         const modalCertImage = document.getElementById('modalCertImage');
@@ -426,12 +445,11 @@
         // Update certificate images with actual base64 or URLs
         // Note: Replace these placeholders with your actual certificate images
         const certImageData = [
-            'iso9001.jpeg', // Replace with actual base64 or URL
-            'iso45001.jpeg', // Replace with actual base64 or URL
-            'iso14001.jpeg', // Replace with actual base64 or URL
-            'certificate.jpeg'   // Replace with actual base64 or URL    
+            'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzE5NDU3MyIvPjx0ZXh0IHg9IjE1MCIgeT0iNTAiIGZpbGw9IiNkNGFmMzciIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPklTTyA5MDAxOjIwMTU8L3RleHQ+PHRleHQgeD0iMTUwIiB5PSI4MCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0Ij5RdWFsaXR5IE1hbmFnZW1lbnQ8L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIxMDAiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCI+U3lzdGVtPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMTUwIiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5NQVYgRUdZUFQgRk9SIFZBTFZFUzwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjIwMCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIj5NYW51ZmFjdHVyaW5nLCBBc3NlbWJseSBhbmQgTWFpbnRlbmFuY2U8L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIyMjAiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiI+SW5kdXN0cmlhbCBWYWx2ZXM8L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIzMDAiIGZpbGw9IiNkNGFmMzciIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZm9udC13ZWlnaHQ9ImJvbGQiPkNlcnRpZmljYXRlIE5vOiBRQVFNUzIwMjIwOTAxPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMzMwIiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiPlZhbGlkOiAwNy4xMC4yMDI0IC0gMDcuMTAuMjAyNzwvdGV4dD48L3N2Zz4=',
+            'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzE5NDU3MyIvPjx0ZXh0IHg9IjE1MCIgeT0iNTAiIGZpbGw9IiNkYzM1NDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPklTTyA0NTAwMToyMDE4PC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iODAiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCI+T2NjdXBhdGlvbmFsIEhlYWx0aCAmIFNhZmV0eTwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjEwMCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0Ij5NYW5hZ2VtZW50IFN5c3RlbTwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjE1MCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+TUFWIEVHWVBUIEZPUiBWQUxWRVM8L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIyMDAiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiI+TWFudWZhY3R1cmluZywgQXNzZW1ibHkgYW5kIE1haW50ZW5hbmNlPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMjIwIiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiPkluZHVzdHJpYWwgVmFsdmVzPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMzAwIiBmaWxsPSIjZGMzNTQ1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZvbnQtd2VpZ2h0PSJib2xkIj5DZXJ0aWZpY2F0ZSBObzogUUFPSFMyMDIyMDkwMzwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjMzMCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIj5WYWxpZDogMDcuMTAuMjAyNCAtIDA3LjEwLjIwMjc8L3RleHQ+PC9zdmc+',
+            'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzE5NDU3MyIvPjx0ZXh0IHg9IjE1MCIgeT0iNTAiIGZpbGw9IiMyOGE3NDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPklTTyAxNDAwMToyMDE1PC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iODAiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCI+RW52aXJvbm1lbnRhbDwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjEwMCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0Ij5NYW5hZ2VtZW50IFN5c3RlbTwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjE1MCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+TUFWIEVHWVBUIEZPUiBWQUxWRVM8L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIyMDAiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiI+TWFudWZhY3R1cmluZywgQXNzZW1ibHkgYW5kIE1haW50ZW5hbmNlPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMjIwIiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiPkluZHVzdHJpYWwgVmFsdmVzPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMzAwIiBmaWxsPSIjMjhhNzQ1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZvbnQtd2VpZ2h0PSJib2xkIj5DZXJ0aWZpY2F0ZSBObzogUUFFTVMyMDIyMDkwMjwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjMzMCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIj5WYWxpZDogMDcuMTAuMjAyNCAtIDA3LjEwLjIwMjc8L3RleHQ+PC9zdmc+',
+            'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzE5NDU3MyIvPjx0ZXh0IHg9IjE1MCIgeT0iNTAiIGZpbGw9IiNkNGFmMzciIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9ImJvbGQiPkNFIE1BUks8L3RleHQ+PHRleHQgeD0iMTUwIiB5PSI4MCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0Ij5FdXJvcGVhbiBDb25mb3JtaXR5PC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMTAwIiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkNlcnRpZmljYXRpb248L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIxNTAiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPk1BViBFR1lQVCBGT1IgVkFMVkVTPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMjAwIiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiPkNvdW5jaWwgRGlyZWN0aXZlIDk3LzIzL0VDPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMjIwIiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiPlByZXNzdXJlIEVxdWlwbWVudDwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjI0MCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIj5NYW51ZmFjdHVyaW5nLCBBc3NlbWJsaW5nPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMjYwIiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiPkluZHVzdHJpYWwgVmFsdmVzIGFuZCBBY2Nlc3NvcmllczwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjMwMCIgZmlsbD0iI2Q0YWYzNyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCI+Q2VydGlmaWNhdGUgTm86IFFBQ0UyMDI0MDMwOTg8L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIzMzAiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCI+VmFsaWQ6IDA4LjEwLjIwMjQgLSAwOC4xMC4yMDI3PC90ZXh0Pjwvc3ZnPg=='
         ];
-        
 
         // Update certificate images
         certImages.forEach((img, index) => {
@@ -439,7 +457,6 @@
                 img.src = certImageData[index];
             }
         });
-
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -499,6 +516,30 @@
             if (hero) {
                 hero.style.transform = `translateY(${rate}px)`;
             }
+        });
+
+        // Floating Contact Widget Functionality
+        const contactWidget = document.querySelector('.floating-contact-widget');
+        const contactToggle = document.querySelector('.contact-toggle');
+        const contactOptions = document.querySelector('.contact-options');
+
+        // Toggle contact options visibility
+        contactToggle.addEventListener('click', function() {
+            contactWidget.classList.toggle('active');
+        });
+
+        // Close contact options when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!contactWidget.contains(event.target)) {
+                contactWidget.classList.remove('active');
+            }
+        });
+
+        // Add smooth entrance animation on page load
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                contactWidget.classList.add('show');
+            }, 2000);
         });
 
         // Mobile menu close on link click

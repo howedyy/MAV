@@ -27,8 +27,40 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#about"><i class="fas fa-info-circle me-1"></i>About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#products"><i class="fas fa-industry me-1"></i>Products</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-industry me-1"></i>Products
+                        </a>
+                        <ul class="dropdown-menu products-dropdown" aria-labelledby="productsDropdown">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">GB Standard</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="gate-valve.html">Gate Valve</a></li>
+                                    <li><a class="dropdown-item" href="globe-valve.html">Globe Valve</a></li>
+                                    <li><a class="dropdown-item" href="check-valve.html">Check Valve</a></li>
+                                    <li><a class="dropdown-item" href="ball-valve.html">Ball Valve</a></li>
+                                    <li><a class="dropdown-item" href="butterfly-valve.html">Butterfly Valve</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">DIN Standard</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-header">Cast Iron</li>
+                                    <li><a class="dropdown-item" href="gate-valve.html">Gate Valve</a></li>
+                                    <li><a class="dropdown-item" href="globe-valve.html">Globe Valve</a></li>
+                                    <li><a class="dropdown-item" href="check-valve.html">Check Valve</a></li>
+                                    <li><a class="dropdown-item" href="ball-valve.html">Ball Valve</a></li>
+                                    <li><a class="dropdown-item" href="strainer-valve.html">Strainer Valve</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li class="dropdown-header">Cast Steel</li>
+                                    <li><a class="dropdown-item" href="gate-valve.html">Gate Valve</a></li>
+                                    <li><a class="dropdown-item" href="globe-valve.html">Globe Valve</a></li>
+                                    <li><a class="dropdown-item" href="check-valve.html">Check Valve</a></li>
+                                </ul>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="products.html">View All Products</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#certifications"><i class="fas fa-certificate me-1"></i>Certifications</a>
@@ -40,6 +72,86 @@
             </div>
         </div>
     </nav>
+
+    <!-- Slideshow Section -->
+    <section class="slideshow-section">
+        <div id="mainSlideshow" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mainSlideshow" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#mainSlideshow" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#mainSlideshow" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#mainSlideshow" data-bs-slide-to="3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="slide-content slide-1">
+                        <div class="slide-image-full">
+                            <div class="image-container-full">
+                                <img src="image1.png" alt="Precision Engineering Excellence" class="slide-img-full img-1">
+                                <div class="image-overlay-full">
+                                    <div class="overlay-content-full">
+                                        <i class="fas fa-cogs overlay-icon-full"></i>
+                                        <h4>Engineering Excellence</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slide-content slide-2">
+                        <div class="slide-image-full">
+                            <div class="image-container-full">
+                                <img src="image2.png" alt="GB & DIN Standards" class="slide-img-full img-2">
+                                <div class="image-overlay-full">
+                                    <div class="overlay-content-full">
+                                        <i class="fas fa-industry overlay-icon-full"></i>
+                                        <h4>International Standards</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slide-content slide-3">
+                        <div class="slide-image-full">
+                            <div class="image-container-full">
+                                <img src="image3.png" alt="Quality Certifications" class="slide-img-full img-3">
+                                <div class="image-overlay-full">
+                                    <div class="overlay-content-full">
+                                        <i class="fas fa-certificate overlay-icon-full"></i>
+                                        <h4>Quality Assured</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slide-content slide-4">
+                        <div class="slide-image-full">
+                            <div class="image-container-full">
+                                <img src="image4.png" alt="25+ Years of Excellence" class="slide-img-full img-4">
+                                <div class="image-overlay-full">
+                                    <div class="overlay-content-full">
+                                        <i class="fas fa-trophy overlay-icon-full"></i>
+                                        <h4>Industry Leader</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainSlideshow" data-bs-slide="prev" aria-label="Previous">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainSlideshow" data-bs-slide="next" aria-label="Next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </section>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -442,6 +554,18 @@
             }
         });
 
+        // Slideshow images loading effect
+        const slideImages = document.querySelectorAll('.slide-img, .slide-img-full');
+        slideImages.forEach(img => {
+            img.addEventListener('load', function() {
+                this.classList.add('loaded');
+            });
+            
+            if (img.complete) {
+                img.classList.add('loaded');
+            }
+        });
+
         // Update certificate images with actual base64 or URLs
         // Note: Replace these placeholders with your actual certificate images
         const certImageData = [
@@ -551,6 +675,71 @@
                 if (navCollapse.classList.contains('show')) {
                     const bsCollapse = new bootstrap.Collapse(navCollapse);
                     bsCollapse.hide();
+                }
+            });
+        });
+
+        // Initialize carousel
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ensure carousel is properly initialized
+            const mainSlideshow = document.getElementById('mainSlideshow');
+            if (mainSlideshow) {
+                const carousel = new bootstrap.Carousel(mainSlideshow, {
+                    interval: 5000,
+                    wrap: true,
+                    keyboard: true,
+                    pause: 'hover'
+                });
+                
+                // Manual control handlers (backup)
+                const prevBtn = document.querySelector('.slideshow-section .carousel-control-prev');
+                const nextBtn = document.querySelector('.slideshow-section .carousel-control-next');
+                
+                if (prevBtn) {
+                    prevBtn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        carousel.prev();
+                    });
+                }
+                
+                if (nextBtn) {
+                    nextBtn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        carousel.next();
+                    });
+                }
+            }
+            
+            // Dropdown submenu functionality
+            // Handle dropdown submenus
+            const dropdownSubmenus = document.querySelectorAll('.dropdown-submenu');
+            
+            dropdownSubmenus.forEach(function(submenu) {
+                const submenuToggle = submenu.querySelector('.dropdown-toggle');
+                const submenuMenu = submenu.querySelector('.dropdown-menu');
+                
+                submenuToggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    // Close other submenus
+                    dropdownSubmenus.forEach(function(otherSubmenu) {
+                        if (otherSubmenu !== submenu) {
+                            otherSubmenu.classList.remove('show');
+                        }
+                    });
+                    
+                    // Toggle current submenu
+                    submenu.classList.toggle('show');
+                });
+            });
+            
+            // Close submenus when main dropdown closes
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.products-dropdown')) {
+                    dropdownSubmenus.forEach(function(submenu) {
+                        submenu.classList.remove('show');
+                    });
                 }
             });
         });

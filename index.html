@@ -13,13 +13,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container">
-          
-              <a class="navbar-brand" href="#home">
+            <a class="navbar-brand" href="#home">
                 <i class="fas fa-cog me-2"></i>MAV Egypt
             </a>
-
-            
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,9 +40,6 @@
             </div>
         </div>
     </nav>
-    <h3>
-        Welcome to MAV Egypt for Valves - Your Trusted Partner in Industrial Valve Solutions Since 1998
-    </h3>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -295,6 +288,7 @@
     </section>
 
     <!-- Contact Section -->
+     <!---
     <section id="contact" class="contact-section">
         <div class="container">
             <h2 class="section-title text-white">Get In Touch</h2>
@@ -354,6 +348,32 @@
             </div>
         </div>
     </section>
+-->
+
+    <!-- Floating Contact Widget -->
+    <div class="floating-contact-widget">
+        <div class="contact-toggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="contact-options">
+            <a href="https://wa.me/201113911199" target="_blank" class="contact-item whatsapp" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+            <a href="mailto:info@mavegypt.net" class="contact-item email" title="Email">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+            </a>
+            <a href="skype:shadyhowedy?chat" class="contact-item skype" title="Skype">
+                <i class="fab fa-skype"></i>
+                <span>Skype</span>
+            </a>
+            <a href="https://facebook.com/mavegypt" target="_blank" class="contact-item facebook" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+                <span>Facebook</span>
+            </a>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -377,8 +397,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script>
-
-           // Certificate image modal functionality (for slider images)
+        // Certificate image modal functionality (for slider images)
         const certImagesSlider = document.querySelectorAll('.cert-image-slider');
         const certModal = new bootstrap.Modal(document.getElementById('certModal'));
         const modalCertImage = document.getElementById('modalCertImage');
@@ -426,12 +445,11 @@
         // Update certificate images with actual base64 or URLs
         // Note: Replace these placeholders with your actual certificate images
         const certImageData = [
-            'iso9001.jpeg', // Replace with actual base64 or URL
-            'iso45001.jpeg', // Replace with actual base64 or URL
-            'iso14001.jpeg', // Replace with actual base64 or URL
-            'certificate.jpeg'   // Replace with actual base64 or URL    
+            'iso9001.jpeg',
+            'iso45001.jpeg',
+            'iso14001.jpeg',
+            'certificate.jpeg'
         ];
-        
 
         // Update certificate images
         certImages.forEach((img, index) => {
@@ -439,7 +457,6 @@
                 img.src = certImageData[index];
             }
         });
-
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -499,6 +516,30 @@
             if (hero) {
                 hero.style.transform = `translateY(${rate}px)`;
             }
+        });
+
+        // Floating Contact Widget Functionality
+        const contactWidget = document.querySelector('.floating-contact-widget');
+        const contactToggle = document.querySelector('.contact-toggle');
+        const contactOptions = document.querySelector('.contact-options');
+
+        // Toggle contact options visibility
+        contactToggle.addEventListener('click', function() {
+            contactWidget.classList.toggle('active');
+        });
+
+        // Close contact options when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!contactWidget.contains(event.target)) {
+                contactWidget.classList.remove('active');
+            }
+        });
+
+        // Add smooth entrance animation on page load
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                contactWidget.classList.add('show');
+            }, 2000);
         });
 
         // Mobile menu close on link click

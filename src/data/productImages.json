@@ -1,0 +1,45 @@
+{
+  "globe-valve": [
+    "/products/image_1_row_1.png",
+    "/products/image_2_row_5.png",
+    "/products/image_2_row_1.png",
+    "/products/image_3_row_15.png"
+  ],
+  "lift-check-valve": [
+    "/products/image_4_row_32.png",
+    "/products/image_5_row_49.png",
+    "/products/image_6_row_46.png"
+  ],
+  "gate-valve": [
+    "/products/image_7_row_105.png",
+    "/products/image_8_row_113.png"
+  ],
+  "ball-valve": [
+    "/products/image_0_row_135.png",
+    "/products/image_10_row_150.png"
+  ],
+  "butterfly-valve": [
+    "/products/image_11_row_174.png",
+    "/products/image_12_row_191.png",
+    "/products/image_13_row_211.png"
+  ],
+  "heavy-strainer-valve": [
+    "/products/image_14_row_232.png"
+  ],
+  "light-strainer-valve": [
+    "/products/image_15_row_253.png",
+    "/products/image_16_row_268.png",
+    "/products/image_17_row_302.png"
+  ],
+  "swing-check-valve": [
+    "/products/image_18_row_318.png",
+    "/products/image_19_row_339.png",
+    "/products/image_20_row_364.png",
+    "/products/image_21_row_363.png",
+    "/products/image_9_row_364.png",
+    "/products/image_22_row_363.png",
+    "/products/image_23_row_379.png",
+    "/products/image_24_row_379.png",
+    "/products/image_25_row_379.png"
+  ]
+}

@@ -3,6 +3,44 @@ import { motion } from 'framer-motion';
 import { ChevronRight, Ruler, Gauge, Thermometer, Box, Settings, CheckCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import PageTransition from '../components/layout/PageTransition';
+import productSpecs from '../data/productSpecs.json';
+
+const DataTable = ({ title, columns, data, isDimensions }) => {
+    if (!data || data.length === 0) return null;
+
+    const actualData = isDimensions ? data.slice(1) : data;
+    const cols = isDimensions ? Object.keys(data[0]) : columns;
+
+    return (
+        <div className="mb-12">
+            <h3 className="text-xl font-bold mb-4 dark:text-white">{title}</h3>
+            <div className="overflow-x-auto rounded-xl shadow-lg border dark:border-gray-700">
+                <table className="w-full text-left border-collapse min-w-[600px]">
+                    <thead>
+                        <tr className="bg-primary text-white">
+                            {cols.map((k, i) => (
+                                <th key={i} className="p-4 border-b border-white/10 font-medium">
+                                    {isDimensions ? k : k.label}
+                                </th>
+                            ))}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {actualData.map((row, i) => (
+                            <tr key={i} className="bg-white dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                                {cols.map((c, j) => (
+                                    <td key={j} className="p-4 border-b dark:border-gray-700 border-gray-100">
+                                        {isDimensions ? row[c] : row[c.key]}
+                                    </td>
+                                ))}
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    );
+};
 
 const ProductDetailPage = () => {
     const { id } = useParams();
@@ -18,6 +56,7 @@ const ProductDetailPage = () => {
     };
 
     const key = productMap[id];
+    const specsData = productSpecs[id];
 
     if (!key) {
         return (
@@ -119,6 +158,65 @@ const ProductDetailPage = () => {
                             </div>
                         ))}
                     </div>
+                </div>
+            </section>
+
+            <section className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors">
+                <div className="container mx-auto px-4">
+                    {specsData && (
+                        <div className="mb-8">
+                            <h2 className="section-title !text-left rtl:!text-right mb-12 dark:text-blue-400">Detailed Specifications</h2>
+
+                            {/* Standard Materials & Dimensions */}
+                            {specsData.materials?.length > 0 && (
+                                <DataTable
+                                    title="Materials"
+                                    columns={[{ key: 'no', label: 'No.' }, { key: 'name', label: 'Parts Name' }, { key: 'material', label: 'Material' }]}
+                                    data={specsData.materials}
+                                />
+                            )}
+                            {specsData.dimensions?.length > 0 && (
+                                <DataTable
+                                    title="Dimensions"
+                                    isDimensions={true}
+                                    data={specsData.dimensions}
+                                />
+                            )}
+
+                            {/* Strainer Specific Tables */}
+                            {specsData.heavy_materials?.length > 0 && (
+                                <div className="mt-16">
+                                    <h3 className="text-2xl font-bold mb-8 dark:text-blue-300 border-l-4 border-accent pl-4">Heavy Strainer Valve</h3>
+                                    <DataTable
+                                        title="Materials"
+                                        columns={[{ key: 'no', label: 'No.' }, { key: 'name', label: 'Parts Name' }, { key: 'material', label: 'Material' }]}
+                                        data={specsData.heavy_materials}
+                                    />
+                                    <DataTable
+                                        title="Dimensions"
+                                        isDimensions={true}
+                                        data={specsData.heavy_dimensions}
+                                    />
+                                </div>
+                            )}
+
+                            {specsData.light_materials?.length > 0 && (
+                                <div className="mt-16">
+                                    <h3 className="text-2xl font-bold mb-8 dark:text-blue-300 border-l-4 border-accent pl-4">Light Strainer Valve</h3>
+                                    <DataTable
+                                        title="Materials"
+                                        columns={[{ key: 'no', label: 'No.' }, { key: 'name', label: 'Parts Name' }, { key: 'material', label: 'Material' }]}
+                                        data={specsData.light_materials}
+                                    />
+                                    <DataTable
+                                        title="Dimensions"
+                                        isDimensions={true}
+                                        data={specsData.light_dimensions}
+                                    />
+                                </div>
+                            )}
+                        </div>
+                    )}
                 </div>
             </section>
 

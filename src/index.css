@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1e3c72;
+  --color-accent: #d4af37;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Roboto", sans-serif;
+}
+
+:root {
+  --primary-color: #1e3c72;
+  --secondary-color: #2a5298;
+  --accent-color: #d4af37;
+  --text-dark: #2c3e50;
+  --text-light: #ecf0f1;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --gradient-primary: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  --gradient-accent: linear-gradient(135deg, #d4af37 0%, #f39c12 100%);
+}
+
+.dark {
+  --primary-color: #3b82f6;
+  --secondary-color: #1e40af;
+  --accent-color: #fbbf24;
+  --text-dark: #f1f5f9;
+  --text-light: #f1f5f9;
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --gradient-primary: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+@layer base {
+  body {
+    @apply leading-relaxed overflow-x-hidden;
+    font-family: var(--font-sans);
+    background-color: var(--bg-primary);
+    color: var(--text-dark);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+@layer components {
+  .btn-custom {
+    @apply bg-gradient-to-br from-accent to-[#f39c12] px-10 py-4 font-bold rounded-full text-white inline-block transition-all hover:-translate-y-1;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+
+  .btn-custom:hover {
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+  }
+
+  .section-title {
+    @apply font-serif text-5xl font-bold text-primary text-center mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-center text-xl text-gray-500 mb-16 px-4;
+  }
+}
+
+/* Custom Utilities based on original style.css */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.bg-accent {
+  background-color: var(--accent-color);
+}
+
+/* Custom Backgrounds */
+.bg-hero-gradient {
+  background: var(--gradient-primary);
+  position: relative;
+}
+
+.bg-hero-gradient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.05)" points="0,1000 1000,0 1000,1000"/></svg>');
+  background-size: cover;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-primary);
+  border-radius: 4px;
+}

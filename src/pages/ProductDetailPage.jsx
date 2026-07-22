@@ -4,6 +4,10 @@ import { ChevronRight, Ruler, Gauge, Thermometer, Box, Settings, CheckCircle } f
 import { useTranslation } from 'react-i18next';
 import PageTransition from '../components/layout/PageTransition';
 import productSpecs from '../data/productSpecs.json';
+import productImagesData from '../data/productImages.json';
+import PerformanceDashboard from '../components/products/PerformanceDashboard';
+import InteractiveBOMViewer from '../components/products/InteractiveBOMViewer';
+import InteractiveValveBlueprint from '../components/products/InteractiveValveBlueprint';
 
 const DataTable = ({ title, columns, data, isDimensions }) => {
     if (!data || data.length === 0) return null;
@@ -12,33 +16,59 @@ const DataTable = ({ title, columns, data, isDimensions }) => {
     const cols = isDimensions ? Object.keys(data[0]) : columns;
 
     return (
-        <div className="mb-12">
-            <h3 className="text-xl font-bold mb-4 dark:text-white">{title}</h3>
-            <div className="overflow-x-auto rounded-xl shadow-lg border dark:border-gray-700">
-                <table className="w-full text-left border-collapse min-w-[600px]">
-                    <thead>
-                        <tr className="bg-primary text-white">
-                            {cols.map((k, i) => (
-                                <th key={i} className="p-4 border-b border-white/10 font-medium">
-                                    {isDimensions ? k : k.label}
-                                </th>
-                            ))}
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {actualData.map((row, i) => (
-                            <tr key={i} className="bg-white dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-                                {cols.map((c, j) => (
-                                    <td key={j} className="p-4 border-b dark:border-gray-700 border-gray-100">
-                                        {isDimensions ? row[c] : row[c.key]}
-                                    </td>
-                                ))}
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
+        <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-12"
+        >
+            <div className="flex items-center mb-6">
+                <div className="w-2 h-8 bg-accent rounded-full mr-3 rtl:mr-0 rtl:ml-3"></div>
+                <h3 className="text-2xl font-bold dark:text-white">{title}</h3>
             </div>
-        </div>
+            
+            <div className="overflow-x-auto pb-4">
+                <div className="inline-block min-w-full align-middle">
+                    <div className="overflow-hidden rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.1)] border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900">
+                        <table className="min-w-full divide-y divide-gray-100 dark:divide-gray-800">
+                            <thead className="bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900">
+                                <tr>
+                                    {cols.map((k, i) => (
+                                        <th 
+                                            key={i} 
+                                            className="px-6 py-5 text-left rtl:text-right text-sm font-bold text-gray-700 dark:text-gray-300 uppercase tracking-wider"
+                                        >
+                                            {isDimensions ? k : k.label}
+                                        </th>
+                                    ))}
+                                </tr>
+                            </thead>
+                            <tbody className="divide-y divide-gray-50 dark:divide-gray-800/50">
+                                {actualData.map((row, i) => (
+                                    <motion.tr 
+                                        initial={{ opacity: 0, x: -10 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ delay: i * 0.05 }}
+                                        key={i} 
+                                        className="group hover:bg-primary/5 dark:hover:bg-primary/10 transition-all duration-300"
+                                    >
+                                        {cols.map((c, j) => (
+                                            <td 
+                                                key={j} 
+                                                className={`px-6 py-4 whitespace-nowrap text-sm ${j === 0 ? 'font-bold text-gray-900 dark:text-white' : 'text-gray-600 dark:text-gray-400 font-medium group-hover:text-primary dark:group-hover:text-blue-400 transition-colors'}`}
+                                            >
+                                                {isDimensions ? row[c] : row[c.key]}
+                                            </td>
+                                        ))}
+                                    </motion.tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </motion.div>
     );
 };
 
@@ -53,10 +83,12 @@ const ProductDetailPage = () => {
         'ball-valve': 'ball_valve',
         'butterfly-valve': 'butterfly_valve',
         'strainer-valve': 'strainer_valve',
+        'head-sealing-valve': 'globe_valve',
     };
 
     const key = productMap[id];
     const specsData = productSpecs[id];
+    const categoryImages = productImagesData[id] || [];
 
     if (!key) {
         return (
@@ -73,13 +105,13 @@ const ProductDetailPage = () => {
     }
 
     const product = {
-        title: t(`details.${key}.title`),
-        subtitle: t(`details.${key}.subtitle`),
+        title: specsData?.title || t(`details.${key}.title`),
+        subtitle: specsData?.subtitle || t(`details.${key}.subtitle`),
         desc: t(`details.${key}.desc`),
         specs: [
             { icon: <Ruler />, label: t(`details.${key}.size_label`), values: [t(`details.${key}.size_val`)] },
-            { icon: <Gauge />, label: t(`details.${key}.press_label`), values: [t(`details.${key}.press_val`)] },
-            { icon: <Thermometer />, label: t(`details.${key}.temp_label`), values: [t(`details.${key}.temp_val`)] },
+            { icon: <Gauge />, label: t(`details.${key}.press_label`), values: [specsData?.performance?.class || t(`details.${key}.press_val`)] },
+            { icon: <Thermometer />, label: t(`details.${key}.temp_label`), values: [specsData?.performance?.suitableTemp || t(`details.${key}.temp_val`)] },
             { icon: <Box />, label: t(`details.${key}.mat_label`), values: [t(`details.${key}.mat_val`)] },
         ],
         features: [
@@ -88,6 +120,8 @@ const ProductDetailPage = () => {
             t(`details.${key}.feat3`),
         ]
     };
+
+    const heroImage = specsData?.diagramImage || categoryImages[0] || null;
 
     return (
         <PageTransition>
@@ -124,13 +158,21 @@ const ProductDetailPage = () => {
                         <motion.div
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
-                            className="order-1 lg:order-2 bg-white dark:bg-gray-800 rounded-[40px] shadow-2xl p-4 relative border dark:border-gray-700"
+                            className="order-1 lg:order-2 bg-white dark:bg-gray-800 rounded-[40px] shadow-2xl p-6 relative border dark:border-gray-700"
                         >
-                            <div className="aspect-square bg-gray-100 dark:bg-gray-700 rounded-[32px] overflow-hidden flex items-center justify-center">
-                                <Settings className="w-32 h-32 text-gray-300 dark:text-gray-600 animate-spin-slow" />
+                            <div className="aspect-square bg-gray-50 dark:bg-gray-700/50 rounded-[32px] overflow-hidden flex items-center justify-center p-6">
+                                {heroImage ? (
+                                    <img
+                                        src={heroImage}
+                                        alt={product.title}
+                                        className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
+                                    />
+                                ) : (
+                                    <Settings className="w-32 h-32 text-gray-300 dark:text-gray-600 animate-spin-slow" />
+                                )}
                             </div>
-                            <div className="absolute top-8 right-8 rtl:right-auto rtl:left-8 bg-accent text-white px-6 py-2 rounded-full font-bold shadow-xl">
-                                GB/DIN Certified
+                            <div className="absolute top-8 right-8 rtl:right-auto rtl:left-8 bg-accent text-white px-6 py-2 rounded-full font-bold shadow-xl text-xs uppercase tracking-wider">
+                                DIN / BS Standard
                             </div>
                         </motion.div>
                     </div>
@@ -167,20 +209,38 @@ const ProductDetailPage = () => {
                         <div className="mb-8">
                             <h2 className="section-title !text-left rtl:!text-right mb-12 dark:text-blue-400">Detailed Specifications</h2>
 
-                            {/* Standard Materials & Dimensions */}
-                            {specsData.materials?.length > 0 && (
-                                <DataTable
-                                    title="Materials"
-                                    columns={[{ key: 'no', label: 'No.' }, { key: 'name', label: 'Parts Name' }, { key: 'material', label: 'Material' }]}
-                                    data={specsData.materials}
-                                />
+                            {/* Performance & Compliance Dashboard */}
+                            {specsData.performance && (
+                                <PerformanceDashboard specs={specsData} />
                             )}
-                            {specsData.dimensions?.length > 0 && (
-                                <DataTable
-                                    title="Dimensions"
-                                    isDimensions={true}
-                                    data={specsData.dimensions}
+
+                            {/* Interactive BOM & Valve Schematic Viewer */}
+                            {specsData.materials?.length > 0 && specsData.materials[0]?.hotspot ? (
+                                <InteractiveBOMViewer
+                                    materials={specsData.materials}
+                                    diagramImage={specsData.diagramImage}
                                 />
+                            ) : (
+                                specsData.materials?.length > 0 && (
+                                    <DataTable
+                                        title="Materials"
+                                        columns={[{ key: 'no', label: 'No.' }, { key: 'name', label: 'Parts Name' }, { key: 'material', label: 'Material' }]}
+                                        data={specsData.materials}
+                                    />
+                                )
+                            )}
+
+                            {/* Interactive Valve Blueprint & Dimension Matrix */}
+                            {specsData.dimensions?.length > 0 && specsData.dimensions[0]?.DN ? (
+                                <InteractiveValveBlueprint dimensions={specsData.dimensions} />
+                            ) : (
+                                specsData.dimensions?.length > 0 && (
+                                    <DataTable
+                                        title="Dimensions"
+                                        isDimensions={true}
+                                        data={specsData.dimensions}
+                                    />
+                                )
                             )}
 
                             {/* Strainer Specific Tables */}

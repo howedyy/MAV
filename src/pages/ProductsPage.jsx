@@ -18,6 +18,7 @@ const ProductsPage = () => {
     const dinProducts = [
         { id: 'gate-valve', name: 'Cast Iron Gate Valve', icon: <DoorClosed className="w-12 h-12" />, desc: 'DIN3352-F4/F5' },
         { id: 'globe-valve', name: 'Cast Iron Globe Valve', icon: <Globe className="w-12 h-12" />, desc: 'DIN3356' },
+        { id: 'head-sealing-valve', name: 'Head Sealing Globe Valve', icon: <Globe className="w-12 h-12" />, desc: 'DIN3356 Head Sealing' },
         { id: 'strainer-valve', name: 'Strainer Valve', icon: <ShieldAlert className="w-12 h-12" />, desc: 'Y-Strainer' },
     ];
 

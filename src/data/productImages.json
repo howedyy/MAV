@@ -23,6 +23,15 @@
     "/products/image_12_row_191.png",
     "/products/image_13_row_211.png"
   ],
+  "strainer-valve": [
+    "/products/strainer_valve_sheet0_img0_row3.png",
+    "/products/image_14_row_232.png",
+    "/products/image_15_row_253.png"
+  ],
+  "head-sealing-valve": [
+    "/products/head_sealing_sheet1_img1_row5.png",
+    "/products/head_sealing_sheet1_img0_row3.png"
+  ],
   "heavy-strainer-valve": [
     "/products/image_14_row_232.png"
   ],

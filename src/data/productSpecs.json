@@ -1,0 +1,935 @@
+{
+  "globe-valve": {
+    "title": "DIN Gland Seal Globe Valve PN16",
+    "subtitle": "Cast Iron Gland Seal Globe Valve PN16",
+    "manufacturer": "LUOYANG YIFA MACHINERY TECHNOLOGY CO., LTD.",
+    "diagramImage": "/products/globe_valve_drawing.png",
+    "productImages": [
+      "/products/globe_valve_drawing.png",
+      "/products/image_1_row_1.png",
+      "/products/image_2_row_1.png",
+      "/products/image_3_row_15.png"
+    ],
+    "performance": {
+      "class": "1.6 Mpa (PN16)",
+      "shellTest": "2.4 Mpa",
+      "seatTestWater": "1.76 Mpa",
+      "seatTestAir": "0.6 Mpa",
+      "suitableTemp": "-10 °C to 200 °C",
+      "suitableMedium": "W.O.G. (Water, Oil, Gas)"
+    },
+    "standards": [
+      { "key": "design", "label": "Design Standard", "value": "BS EN 13798-2010" },
+      { "key": "faceToFace", "label": "Face to Face", "value": "EN 558-1" },
+      { "key": "flange", "label": "Flange Standard", "value": "BS EN 1092-2 PN16" },
+      { "key": "inspectionTest", "label": "Inspection & Test", "value": "BS EN 12266" }
+    ],
+    "materials": [
+      { "no": "1", "name": "Body", "material": "cast iron / GG25", "tag": "Body & Casing", "hotspot": { "top": "84%", "left": "3.5%" } },
+      { "no": "2", "name": "Seat (screw type)", "material": "SS304 (DN15-50) / X20Cr13 (DN65-200)", "tag": "Seating", "hotspot": { "top": "79.5%", "left": "3.5%" } },
+      { "no": "3", "name": "Disc", "material": "X20Cr13 (DN15-65) / A105+1Cr13 (DN80-200)", "tag": "Internal Trim", "hotspot": { "top": "75%", "left": "3.5%" } },
+      { "no": "4", "name": "C ring", "material": "Carbon steel", "tag": "Retaining Ring", "hotspot": { "top": "70.5%", "left": "3.5%" } },
+      { "no": "5", "name": "Disc Nut", "material": "Carbon steel", "tag": "Fastener", "hotspot": { "top": "66%", "left": "3.5%" } },
+      { "no": "6", "name": "Stem", "material": "X20Cr13 (Stainless Steel)", "tag": "Stem & Spindle", "hotspot": { "top": "61.5%", "left": "3.5%" } },
+      { "no": "7", "name": "Bonnet Bolt", "material": "Carbon steel", "tag": "Fastener", "hotspot": { "top": "57.5%", "left": "3.5%" } },
+      { "no": "8", "name": "Bonnet Nut", "material": "Carbon steel", "tag": "Fastener", "hotspot": { "top": "53%", "left": "3.5%" } },
+      { "no": "9", "name": "Stem Packing", "material": "Flexible Graphite", "tag": "Seals & Gaskets", "hotspot": { "top": "49%", "left": "3.5%" } },
+      { "no": "10", "name": "Gland Flange", "material": "Cast iron", "tag": "Flange & Housing", "hotspot": { "top": "44.5%", "left": "3.5%" } },
+      { "no": "11", "name": "Bonnet", "material": "Cast iron / GG25", "tag": "Body & Casing", "hotspot": { "top": "40.5%", "left": "3.5%" } },
+      { "no": "12", "name": "Stem Nut", "material": "Brass", "tag": "Bushing & Drive", "hotspot": { "top": "36.5%", "left": "3.5%" } },
+      { "no": "13", "name": "Handwheel", "material": "Cast iron", "tag": "Actuator / Handle", "hotspot": { "top": "32%", "left": "3.5%" } },
+      { "no": "14", "name": "Screw Pin", "material": "Carbon steel", "tag": "Fastener", "hotspot": { "top": "23%", "left": "76.5%" } },
+      { "no": "15", "name": "Gasket", "material": "Flexible Graphite", "tag": "Seals & Gaskets", "hotspot": { "top": "37.5%", "left": "76.5%" } }
+    ],
+    "dimensions": [
+      { "DN": "DN15", "size": "15", "D": "95", "D1": "65", "D2": "46", "f": "2", "Z-ød": "4-ø14", "L": "130", "H": "180", "W": "120" },
+      { "DN": "DN20", "size": "20", "D": "105", "D1": "75", "D2": "56", "f": "2", "Z-ød": "4-ø14", "L": "150", "H": "180", "W": "120" },
+      { "DN": "DN25", "size": "25", "D": "115", "D1": "85", "D2": "65", "f": "2", "Z-ød": "4-ø14", "L": "160", "H": "210", "W": "140" },
+      { "DN": "DN32", "size": "32", "D": "140", "D1": "100", "D2": "76", "f": "2", "Z-ød": "4-ø19", "L": "180", "H": "220", "W": "160" },
+      { "DN": "DN40", "size": "40", "D": "150", "D1": "110", "D2": "84", "f": "3", "Z-ød": "4-ø19", "L": "200", "H": "250", "W": "160" },
+      { "DN": "DN50", "size": "50", "D": "165", "D1": "125", "D2": "99", "f": "3", "Z-ød": "4-ø19", "L": "230", "H": "260", "W": "180" },
+      { "DN": "DN65", "size": "60", "D": "185", "D1": "145", "D2": "118", "f": "3", "Z-ød": "4-ø19", "L": "290", "H": "270", "W": "200" },
+      { "DN": "DN80", "size": "80", "D": "200", "D1": "160", "D2": "132", "f": "3", "Z-ød": "8-ø19", "L": "310", "H": "310", "W": "220" },
+      { "DN": "DN100", "size": "100", "D": "220", "D1": "180", "D2": "156", "f": "3", "Z-ød": "8-ø19", "L": "350", "H": "380", "W": "280" },
+      { "DN": "DN125", "size": "125", "D": "250", "D1": "210", "D2": "184", "f": "3", "Z-ød": "8-ø19", "L": "400", "H": "430", "W": "300" },
+      { "DN": "DN150", "size": "150", "D": "285", "D1": "240", "D2": "211", "f": "3", "Z-ød": "8-ø19", "L": "480", "H": "460", "W": "350" },
+      { "DN": "DN200", "size": "200", "D": "340", "D1": "295", "D2": "266", "f": "3", "Z-ød": "12-ø23", "L": "530", "H": "530", "W": "400" }
+    ]
+  },
+  "lift-check-valve": {
+    "dimensions": [],
+    "materials": [
+      {
+        "no": "PN",
+        "name": "DN",
+        "material": "L"
+      },
+      {
+        "no": "15",
+        "name": "130",
+        "material": "205"
+      },
+      {
+        "no": "20",
+        "name": "150",
+        "material": "205"
+      },
+      {
+        "no": "25",
+        "name": "160",
+        "material": "205"
+      },
+      {
+        "no": "32",
+        "name": "180",
+        "material": "235"
+      },
+      {
+        "no": "40",
+        "name": "200",
+        "material": "260"
+      },
+      {
+        "no": "50",
+        "name": "230",
+        "material": "260"
+      },
+      {
+        "no": "16",
+        "name": "65",
+        "material": "290"
+      },
+      {
+        "no": "80",
+        "name": "310",
+        "material": "350"
+      },
+      {
+        "no": "100",
+        "name": "350",
+        "material": "375"
+      },
+      {
+        "no": "125",
+        "name": "400",
+        "material": "450"
+      },
+      {
+        "no": "150",
+        "name": "480",
+        "material": "465"
+      },
+      {
+        "no": "200",
+        "name": "600",
+        "material": "530"
+      },
+      {
+        "no": "15",
+        "name": "130",
+        "material": "205"
+      },
+      {
+        "no": "20",
+        "name": "150",
+        "material": "205"
+      },
+      {
+        "no": "25",
+        "name": "160",
+        "material": "205"
+      },
+      {
+        "no": "32",
+        "name": "180",
+        "material": "235"
+      },
+      {
+        "no": "40",
+        "name": "200",
+        "material": "260"
+      },
+      {
+        "no": "50",
+        "name": "230",
+        "material": "260"
+      },
+      {
+        "no": "40",
+        "name": "65",
+        "material": "290"
+      },
+      {
+        "no": "80",
+        "name": "310",
+        "material": "350"
+      },
+      {
+        "no": "100",
+        "name": "350",
+        "material": "375"
+      },
+      {
+        "no": "125",
+        "name": "400",
+        "material": "450"
+      },
+      {
+        "no": "150",
+        "name": "480",
+        "material": "465"
+      },
+      {
+        "no": "200",
+        "name": "600",
+        "material": "530"
+      }
+    ],
+    "description": ""
+  },
+  "gate-valve": {
+    "title": "Cast Iron Resilient Seated Gate Valve DIN3352 F4",
+    "subtitle": "Resilient Seated Non-Rising Stem Gate Valve (50-400Z45X-16)",
+    "manufacturer": "MAV VALVES MANUFACTURING CO., LTD.",
+    "diagramImage": "/products/gate_valve_sheet0_img0_row1.png",
+    "productImages": [
+      "/products/gate_valve_sheet0_img0_row1.png",
+      "/products/image_7_row_105.png",
+      "/products/image_8_row_113.png"
+    ],
+    "performance": {
+      "class": "PN16 (1.6 MPa)",
+      "shellTest": "2.4 MPa",
+      "seatTestWater": "1.76 MPa",
+      "seatTestAir": "1.76 MPa (Hyd)",
+      "suitableTemp": "-10 °C to 120 °C",
+      "suitableMedium": "Water, Sewage, Neutral Liquids"
+    },
+    "standards": [
+      { "key": "design", "label": "Design Standard", "value": "DIN3352 F4 / EN 1171" },
+      { "key": "faceToFace", "label": "Face to Face", "value": "DIN 3202 F4 / EN 558-1 S14" },
+      { "key": "flange", "label": "Flange Standard", "value": "EN 1092-2 PN16" },
+      { "key": "inspectionTest", "label": "Inspection & Test", "value": "API 598 / EN 12266" }
+    ],
+    "materials": [
+      { "no": "1", "name": "Body", "material": "Ductile Iron (GGG50)", "tag": "Body & Casing", "hotspot": { "top": "78.5%", "left": "67%" } },
+      { "no": "2", "name": "Seat", "material": "EPDM Rubber", "tag": "Seating", "hotspot": { "top": "71.5%", "left": "67%" } },
+      { "no": "3", "name": "Stem", "material": "SS420 (Stainless Steel)", "tag": "Stem & Spindle", "hotspot": { "top": "61%", "left": "48%" } },
+      { "no": "4", "name": "Disc (Wedge)", "material": "Ductile Iron (GGG50) + EPDM", "tag": "Internal Wedge", "hotspot": { "top": "57.5%", "left": "67%" } },
+      { "no": "5", "name": "Stem Nut", "material": "Brass", "tag": "Drive Nut", "hotspot": { "top": "48%", "left": "67%" } },
+      { "no": "6", "name": "Bonnet Gasket", "material": "EPDM Rubber", "tag": "Seals & Gaskets", "hotspot": { "top": "39%", "left": "67%" } },
+      { "no": "7", "name": "Bonnet", "material": "Ductile Iron (GGG50)", "tag": "Body & Casing", "hotspot": { "top": "31.5%", "left": "67%" } },
+      { "no": "8", "name": "Socket Head Screw", "material": "Stainless Steel (SS)", "tag": "Fastener", "hotspot": { "top": "31.5%", "left": "48%" } },
+      { "no": "9", "name": "Sealing Ring", "material": "Brass", "tag": "Retaining Ring", "hotspot": { "top": "21.5%", "left": "67%" } },
+      { "no": "10", "name": "O-ring", "material": "EPDM Rubber", "tag": "Seals & Gaskets", "hotspot": { "top": "14.5%", "left": "67%" } },
+      { "no": "11", "name": "Handwheel", "material": "Ductile Iron (GGG50)", "tag": "Actuator / Handle", "hotspot": { "top": "7.5%", "left": "67%" } }
+    ],
+    "dimensions": [
+      { "DN": "DN50", "size": "2''", "D": "165", "D1": "125", "D2": "99", "f": "3", "b": "19", "Z-?d": "4-?19", "L": "150", "weight": "7.6 kg" },
+      { "DN": "DN65", "size": "2.5''", "D": "185", "D1": "145", "D2": "118", "f": "3", "b": "19", "Z-?d": "4-?19", "L": "170", "weight": "9.6 kg" },
+      { "DN": "DN80", "size": "3''", "D": "200", "D1": "160", "D2": "132", "f": "3", "b": "19", "Z-?d": "8-?19", "L": "180", "weight": "12.2 kg" },
+      { "DN": "DN100", "size": "4''", "D": "220", "D1": "180", "D2": "156", "f": "3", "b": "19", "Z-?d": "8-?19", "L": "190", "weight": "15.7 kg" },
+      { "DN": "DN125", "size": "5''", "D": "250", "D1": "210", "D2": "184", "f": "3", "b": "19", "Z-?d": "8-?19", "L": "200", "weight": "23.5 kg" },
+      { "DN": "DN150", "size": "6''", "D": "285", "D1": "240", "D2": "211", "f": "3", "b": "19", "Z-?d": "8-?23", "L": "210", "weight": "27.8 kg" },
+      { "DN": "DN200", "size": "8''", "D": "340", "D1": "295", "D2": "266", "f": "3", "b": "20", "Z-?d": "12-?23", "L": "230", "weight": "46.0 kg" },
+      { "DN": "DN250", "size": "10''", "D": "405", "D1": "355", "D2": "319", "f": "3", "b": "22", "Z-?d": "12-?28", "L": "250", "weight": "63.0 kg" },
+      { "DN": "DN300", "size": "12''", "D": "460", "D1": "410", "D2": "370", "f": "4", "b": "24.5", "Z-?d": "12-?28", "L": "270", "weight": "90.0 kg" },
+      { "DN": "DN350", "size": "14''", "D": "520", "D1": "470", "D2": "429", "f": "4", "b": "26.5", "Z-?d": "16-?28", "L": "290", "weight": "144.0 kg" },
+      { "DN": "DN400", "size": "16''", "D": "580", "D1": "525", "D2": "480", "f": "4", "b": "28", "Z-?d": "16-?31", "L": "310", "weight": "185.0 kg" }
+    ]
+  },
+  "ball-valve": {
+    "dimensions": [
+      {
+        "DN": "25",
+        "L": "125",
+        "D": "115",
+        "D1": "68",
+        "P.C.D": "85"
+      },
+      {
+        "DN": "32",
+        "L": "130",
+        "D": "140",
+        "D1": "78",
+        "P.C.D": "100"
+      },
+      {
+        "DN": "40",
+        "L": "140",
+        "D": "150",
+        "D1": "88",
+        "P.C.D": "110"
+      },
+      {
+        "DN": "50",
+        "L": "150",
+        "D": "165",
+        "D1": "102",
+        "P.C.D": "125"
+      },
+      {
+        "DN": "65",
+        "L": "170",
+        "D": "185",
+        "D1": "122",
+        "P.C.D": "143"
+      },
+      {
+        "DN": "80",
+        "L": "180",
+        "D": "200",
+        "D1": "138",
+        "P.C.D": "160"
+      },
+      {
+        "DN": "100",
+        "L": "190",
+        "D": "220",
+        "D1": "158",
+        "P.C.D": "180"
+      },
+      {
+        "DN": "125",
+        "L": "325",
+        "D": "250",
+        "D1": "188",
+        "P.C.D": "210"
+      },
+      {
+        "DN": "150",
+        "L": "350",
+        "D": "285",
+        "D1": "212",
+        "P.C.D": "240"
+      },
+      {
+        "DN": "200",
+        "L": "400",
+        "D": "340",
+        "D1": "268",
+        "P.C.D": "293"
+      },
+      {
+        "DN": "250",
+        "L": "450",
+        "D": "405",
+        "D1": "320",
+        "P.C.D": "355"
+      }
+    ],
+    "materials": [
+      {
+        "no": "BS5159",
+        "name": "DN25- DN100 DIN3202 F4",
+        "material": "DIN2501/DIN2533"
+      }
+    ],
+    "description": ""
+  },
+  "butterfly-valve": {
+    "dimensions": [
+      {
+        "DN": "50",
+        "Φ": "125",
+        "µ": "170",
+        "L": "234",
+        "Z-Φd": "4-Φ23",
+        "B": "43"
+      },
+      {
+        "DN": "65",
+        "Φ": "145",
+        "µ": "128",
+        "L": "234",
+        "Z-Φd": "4-Φ23",
+        "B": "46"
+      },
+      {
+        "DN": "80",
+        "Φ": "160",
+        "µ": "202",
+        "L": "264",
+        "Z-Φd": "4-Φ23",
+        "B": "46"
+      },
+      {
+        "DN": "100",
+        "Φ": "180",
+        "µ": "222",
+        "L": "259",
+        "Z-Φd": "4-Φ23",
+        "B": "52"
+      },
+      {
+        "DN": "125",
+        "Φ": "210",
+        "µ": "233",
+        "L": "312",
+        "Z-Φd": "4-Φ23",
+        "B": "56"
+      },
+      {
+        "DN": "150",
+        "Φ": "240",
+        "µ": "257",
+        "L": "312",
+        "Z-Φd": "4-Φ26",
+        "B": "56"
+      },
+      {
+        "DN": "200",
+        "Φ": "295",
+        "µ": "295",
+        "L": "360"
+      }
+    ],
+    "materials": [],
+    "description": ""
+  },
+  "strainer-valve": {
+    "title": "Cast Iron Y-Strainer Flanged DIN3202 F1",
+    "subtitle": "Cast Iron Y-Type Strainer PN16 (15-400YG41-16)",
+    "manufacturer": "MAV VALVES MANUFACTURING CO., LTD.",
+    "diagramImage": "/products/strainer_valve_sheet0_img0_row3.png",
+    "productImages": [
+      "/products/strainer_valve_sheet0_img0_row3.png",
+      "/products/image_14_row_232.png",
+      "/products/image_15_row_253.png"
+    ],
+    "performance": {
+      "class": "PN16 (1.6 MPa)",
+      "shellTest": "2.4 MPa",
+      "seatTestWater": "1.76 MPa",
+      "seatTestAir": "1.76 MPa (Hyd)",
+      "suitableTemp": "-10 °C to 120 °C",
+      "suitableMedium": "Water, Oil, Gas, Steam"
+    },
+    "standards": [
+      { "key": "design", "label": "Design Standard", "value": "DIN 3202 F1 / EN 558-1 S1" },
+      { "key": "faceToFace", "label": "Face to Face", "value": "DIN 3202 - F1 / EN 558-1" },
+      { "key": "flange", "label": "Flange Standard", "value": "EN 1092-2 PN16" },
+      { "key": "inspectionTest", "label": "Inspection & Test", "value": "EN 12266 / API 598" }
+    ],
+    "materials": [
+      { "no": "1", "name": "Body", "material": "Ductile Iron (GGG50)", "tag": "Body & Casing", "hotspot": { "top": "76.5%", "left": "17%" } },
+      { "no": "2", "name": "Screen (Mesh)", "material": "SS304 Stainless Steel", "tag": "Internal Filter Mesh", "hotspot": { "top": "76.5%", "left": "28.5%" } },
+      { "no": "3", "name": "Bonnet (Cover)", "material": "Ductile Iron (GGG50)", "tag": "Body & Casing", "hotspot": { "top": "76.5%", "left": "37%" } },
+      { "no": "4", "name": "Flange Gasket", "material": "EPDM Rubber", "tag": "Seals & Gaskets", "hotspot": { "top": "76.5%", "left": "52%" } },
+      { "no": "5", "name": "Drain Plug", "material": "Steel", "tag": "Drain & Cleanout", "hotspot": { "top": "76.5%", "left": "65.5%" } },
+      { "no": "6", "name": "Bonnet Bolt", "material": "SS201 Stainless Steel", "tag": "Fastener", "hotspot": { "top": "76.5%", "left": "77.5%" } }
+    ],
+    "dimensions": [
+      { "DN": "DN15", "size": "0.5''", "D": "95", "D1": "65", "D2": "46", "f": "2", "b": "16", "Z-ød": "4-ø15", "L": "130" },
+      { "DN": "DN20", "size": "0.75''", "D": "105", "D1": "75", "D2": "56", "f": "2", "b": "16", "Z-ød": "4-ø15", "L": "150" },
+      { "DN": "DN25", "size": "1''", "D": "115", "D1": "85", "D2": "65", "f": "2", "b": "16", "Z-ød": "4-ø15", "L": "160" },
+      { "DN": "DN32", "size": "1.25''", "D": "140", "D1": "100", "D2": "76", "f": "2", "b": "17", "Z-ød": "4-ø19", "L": "180" },
+      { "DN": "DN40", "size": "1.5''", "D": "150", "D1": "110", "D2": "84", "f": "2", "b": "18", "Z-ød": "4-ø19", "L": "200" },
+      { "DN": "DN50", "size": "2''", "D": "165", "D1": "125", "D2": "99", "f": "2", "b": "18", "Z-ød": "4-ø19", "L": "230" },
+      { "DN": "DN65", "size": "2.5''", "D": "185", "D1": "145", "D2": "118", "f": "2", "b": "18", "Z-ød": "4-ø19", "L": "290" },
+      { "DN": "DN80", "size": "3''", "D": "200", "D1": "160", "D2": "132", "f": "2", "b": "19", "Z-ød": "8-ø19", "L": "310" },
+      { "DN": "DN100", "size": "4''", "D": "220", "D1": "180", "D2": "156", "f": "2", "b": "19", "Z-ød": "8-ø19", "L": "350" },
+      { "DN": "DN125", "size": "5''", "D": "250", "D1": "210", "D2": "184", "f": "2.5", "b": "20", "Z-ød": "8-ø19", "L": "400" },
+      { "DN": "DN150", "size": "6''", "D": "285", "D1": "240", "D2": "211", "f": "2.5", "b": "21", "Z-ød": "8-ø23", "L": "480" },
+      { "DN": "DN200", "size": "8''", "D": "340", "D1": "295", "D2": "266", "f": "3", "b": "21", "Z-ød": "12-ø23", "L": "600" },
+      { "DN": "DN250", "size": "10''", "D": "405", "D1": "355", "D2": "319", "f": "3", "b": "22", "Z-ød": "12-ø27", "L": "730" },
+      { "DN": "DN300", "size": "12''", "D": "460", "D1": "410", "D2": "370", "f": "3", "b": "25", "Z-ød": "12-ø27", "L": "850" },
+      { "DN": "DN350", "size": "14''", "D": "520", "D1": "470", "D2": "429", "f": "3", "b": "26", "Z-ød": "16-ø27", "L": "980" },
+      { "DN": "DN400", "size": "16''", "D": "580", "D1": "525", "D2": "480", "f": "3", "b": "28", "Z-ød": "16-ø30", "L": "1100" }
+    ]
+  },
+  "head-sealing-valve": {
+    "title": "Ductile Iron Head Sealing Globe Valve PN10/16",
+    "subtitle": "Head Sealing Gland Packing Globe Valve (DIN 3356 / EN 13798)",
+    "manufacturer": "MAV VALVES MANUFACTURING CO., LTD.",
+    "diagramImage": "/products/head_sealing_sheet1_img1_row5.png",
+    "productImages": [
+      "/products/head_sealing_sheet1_img1_row5.png",
+      "/products/head_sealing_sheet1_img0_row3.png"
+    ],
+    "performance": {
+      "class": "PN10/16 (1.0 / 1.6 MPa)",
+      "shellTest": "1.5 / 2.4 MPa",
+      "seatTestWater": "1.1 / 1.76 MPa",
+      "seatTestAir": "1.1 / 1.76 MPa (Hyd)",
+      "suitableTemp": "-10 °C to 200 °C",
+      "suitableMedium": "Water, Steam, Oil"
+    },
+    "standards": [
+      { "key": "design", "label": "Design Standard", "value": "DIN 3356 / EN 13798" },
+      { "key": "faceToFace", "label": "Face to Face", "value": "DIN 3202 F1 / EN 558-1" },
+      { "key": "flange", "label": "Flange Standard", "value": "EN 1092-2 PN10/PN16" },
+      { "key": "inspectionTest", "label": "Inspection & Test", "value": "EN 12266 / API 598" }
+    ],
+    "materials": [
+      { "no": "1", "name": "BODY", "material": "Ductile Iron (DI)", "tag": "Body & Casing", "hotspot": { "top": "84%", "left": "30%" } },
+      { "no": "2", "name": "SEAT", "material": "BRASS", "tag": "Seating Ring", "hotspot": { "top": "78%", "left": "42%" } },
+      { "no": "3", "name": "DISC", "material": "Ductile Iron + BRASS", "tag": "Internal Disc", "hotspot": { "top": "72%", "left": "45%" } },
+      { "no": "4", "name": "STEM", "material": "SS410 Stainless Steel", "tag": "Stem & Spindle", "hotspot": { "top": "55%", "left": "50%" } },
+      { "no": "5", "name": "STEM NUT", "material": "BRASS", "tag": "Drive Nut", "hotspot": { "top": "60%", "left": "52%" } },
+      { "no": "6", "name": "BOLT", "material": "Carbon Steel (CS)", "tag": "Fastener", "hotspot": { "top": "52%", "left": "62%" } },
+      { "no": "7", "name": "NUT", "material": "Carbon Steel (CS)", "tag": "Fastener", "hotspot": { "top": "48%", "left": "64%" } },
+      { "no": "8", "name": "GASKET", "material": "Flexible Graphite", "tag": "Seals & Gaskets", "hotspot": { "top": "50%", "left": "40%" } },
+      { "no": "9", "name": "BONNET", "material": "Ductile Iron (DI)", "tag": "Body & Casing", "hotspot": { "top": "42%", "left": "38%" } },
+      { "no": "10", "name": "GASKET", "material": "Flexible Graphite", "tag": "Seals & Gaskets", "hotspot": { "top": "36%", "left": "52%" } },
+      { "no": "11", "name": "STUFFING", "material": "Ductile Iron (DI)", "tag": "Packing Housing", "hotspot": { "top": "30%", "left": "54%" } },
+      { "no": "12", "name": "PACKING", "material": "Flexible Graphite", "tag": "Seals & Gaskets", "hotspot": { "top": "26%", "left": "52%" } },
+      { "no": "13", "name": "GLAND", "material": "Ductile Iron (DI)", "tag": "Gland Flange", "hotspot": { "top": "22%", "left": "56%" } },
+      { "no": "14", "name": "BOLT", "material": "Carbon Steel (CS)", "tag": "Fastener", "hotspot": { "top": "24%", "left": "62%" } },
+      { "no": "15", "name": "WHEEL", "material": "Cast Iron (CI)", "tag": "Actuator / Handle", "hotspot": { "top": "10%", "left": "50%" } }
+    ],
+    "dimensions": [
+      { "DN": "DN50", "size": "2''", "D": "165", "D1": "125", "f": "3", "Z-ød": "4-ø19", "L": "150", "TH": "19" },
+      { "DN": "DN65", "size": "2.5''", "D": "185", "D1": "145", "f": "3", "Z-ød": "4-ø19", "L": "170", "TH": "20" },
+      { "DN": "DN80", "size": "3''", "D": "200", "D1": "160", "f": "3", "Z-ød": "8-ø19", "L": "180", "TH": "20" },
+      { "DN": "DN100", "size": "4''", "D": "220", "D1": "180", "f": "3", "Z-ød": "8-ø19", "L": "190", "TH": "21" },
+      { "DN": "DN125", "size": "5''", "D": "250", "D1": "210", "f": "3", "Z-ød": "8-ø19", "L": "200", "TH": "24" },
+      { "DN": "DN150", "size": "6''", "D": "285", "D1": "240", "f": "3", "Z-ød": "8-ø23", "L": "210", "TH": "22" },
+      { "DN": "DN200", "size": "8''", "D": "340", "D1": "295", "f": "3", "Z-ød": "8/12-ø23", "L": "230", "TH": "23" },
+      { "DN": "DN250", "size": "10''", "D": "405", "D1": "350/355", "f": "3", "Z-ød": "12-ø23/27", "L": "250", "TH": "26" },
+      { "DN": "DN300", "size": "12''", "D": "460", "D1": "400/410", "f": "4", "Z-ød": "12-ø23/27", "L": "270", "TH": "26" }
+    ]
+  },
+  "heavy-strainer-valve": {
+    "dimensions": [
+      {
+        "DN": "15",
+        "L": "130",
+        "D": "95",
+        "D1": "65",
+        "D2": "46",
+        "B-f": "14-2",
+        "Z-d": "4-14"
+      },
+      {
+        "DN": "20",
+        "L": "150",
+        "D": "105",
+        "D1": "75",
+        "D2": "56",
+        "B-f": "16-2",
+        "Z-d": "4-14"
+      },
+      {
+        "DN": "25",
+        "L": "160",
+        "D": "115",
+        "D1": "85",
+        "D2": "65",
+        "B-f": "16-2",
+        "Z-d": "4-14"
+      },
+      {
+        "DN": "32",
+        "L": "180",
+        "D": "140",
+        "D1": "100",
+        "D2": "76",
+        "B-f": "18-2",
+        "Z-d": "4-19"
+      },
+      {
+        "DN": "40",
+        "L": "200",
+        "D": "150",
+        "D1": "110",
+        "D2": "84",
+        "B-f": "18-2",
+        "Z-d": "4-19"
+      },
+      {
+        "DN": "50",
+        "L": "230",
+        "D": "165",
+        "D1": "125",
+        "D2": "99",
+        "B-f": "20-2",
+        "Z-d": "4-19"
+      },
+      {
+        "DN": "65",
+        "L": "290",
+        "D": "185",
+        "D1": "145",
+        "D2": "118",
+        "B-f": "20-2",
+        "Z-d": "4-19"
+      },
+      {
+        "DN": "80",
+        "L": "310",
+        "D": "200",
+        "D1": "160",
+        "D2": "132",
+        "B-f": "22-2",
+        "Z-d": "8-19"
+      },
+      {
+        "DN": "100",
+        "L": "350",
+        "D": "220",
+        "D1": "180",
+        "D2": "156",
+        "B-f": "24-2",
+        "Z-d": "8-19"
+      },
+      {
+        "DN": "125",
+        "L": "400",
+        "D": "250",
+        "D1": "210",
+        "D2": "184",
+        "B-f": "26-2",
+        "Z-d": "8-19"
+      },
+      {
+        "DN": "150",
+        "L": "480",
+        "D": "285",
+        "D1": "240",
+        "D2": "211",
+        "B-f": "26-2",
+        "Z-d": "8-23"
+      },
+      {
+        "DN": "200",
+        "L": "600",
+        "D": "340",
+        "D1": "295",
+        "D2": "266",
+        "B-f": "30-2",
+        "Z-d": "12-23"
+      },
+      {
+        "DN": "250",
+        "L": "730",
+        "D": "405",
+        "D1": "355",
+        "D2": "319",
+        "B-f": "32-2",
+        "Z-d": "12-28"
+      },
+      {
+        "DN": "300",
+        "L": "850",
+        "D": "460",
+        "D1": "410",
+        "D2": "370",
+        "B-f": "32-2",
+        "Z-d": "12-28 [image]"
+      },
+      {
+        "DN": "350",
+        "L": "980",
+        "D": "520",
+        "D1": "470",
+        "D2": "429",
+        "B-f": "36-2",
+        "Z-d": "16-28"
+      },
+      {
+        "DN": "400",
+        "L": "1100",
+        "D": "580",
+        "D1": "525",
+        "D2": "480",
+        "B-f": "38-2",
+        "Z-d": "16-31"
+      }
+    ],
+    "materials": [],
+    "description": "Face to face : DIN 3202 F1 Hydraulic Test to ISO 5208"
+  },
+  "light-strainer-valve": {
+    "dimensions": [
+      {
+        "DN": "50",
+        "L": "230",
+        "D": "165",
+        "D1": "125",
+        "D2": "99",
+        "B-f": "20-3",
+        "Z-d": "4-19",
+        "L1": "102",
+        "L2": "141"
+      },
+      {
+        "DN": "65",
+        "L": "290",
+        "D": "185",
+        "D1": "145",
+        "D2": "118",
+        "B-f": "20-3",
+        "Z-d": "4-19",
+        "L1": "112",
+        "L2": "161"
+      },
+      {
+        "DN": "80",
+        "L": "310",
+        "D": "200",
+        "D1": "160",
+        "D2": "132",
+        "B-f": "22-3",
+        "Z-d": "8-19",
+        "L1": "138",
+        "L2": "184"
+      },
+      {
+        "DN": "100",
+        "L": "350",
+        "D": "220",
+        "D1": "180",
+        "D2": "156",
+        "B-f": "24-3",
+        "Z-d": "8-19",
+        "L1": "165",
+        "L2": "222"
+      },
+      {
+        "DN": "125",
+        "L": "400",
+        "D": "250",
+        "D1": "210",
+        "D2": "184",
+        "B-f": "26-3",
+        "Z-d": "8-19",
+        "L1": "191",
+        "L2": "257"
+      },
+      {
+        "DN": "150",
+        "L": "480",
+        "D": "285",
+        "D1": "240",
+        "D2": "211",
+        "B-f": "26-3",
+        "Z-d": "8-23",
+        "L1": "214",
+        "L2": "290"
+      },
+      {
+        "DN": "200",
+        "L": "600",
+        "D": "340",
+        "D1": "295",
+        "D2": "266",
+        "B-f": "30-3",
+        "Z-d": "12-23",
+        "L1": "275",
+        "L2": "363"
+      },
+      {
+        "DN": "250",
+        "L": "730",
+        "D": "405",
+        "D1": "355",
+        "D2": "319",
+        "B-f": "32-3",
+        "Z-d": "12-28",
+        "L1": "330",
+        "L2": "434"
+      },
+      {
+        "DN": "300",
+        "L": "850",
+        "D": "460",
+        "D1": "410",
+        "D2": "370",
+        "B-f": "32-3",
+        "Z-d": "12-28",
+        "L1": "387",
+        "L2": "542"
+      },
+      {
+        "DN": "Column11"
+      }
+    ],
+    "materials": [
+      {
+        "no": "1",
+        "name": "Body",
+        "material": "GG25"
+      },
+      {
+        "no": "2",
+        "name": "Screen",
+        "material": "SS304"
+      },
+      {
+        "no": "3",
+        "name": "Gasket",
+        "material": "Steel + graphite"
+      },
+      {
+        "no": "4",
+        "name": "Bolt",
+        "material": "Carbon steel"
+      },
+      {
+        "no": "5",
+        "name": "Bonnet",
+        "material": "GG25"
+      },
+      {
+        "no": "6",
+        "name": "Drain plug",
+        "material": "Carbon steel"
+      },
+      {
+        "no": "7",
+        "name": "Thread seal\r\ntape",
+        "material": "PTFE"
+      }
+    ],
+    "description": "Face to face : DIN 3202 F1"
+  },
+  "swing-check-valve": {
+    "dimensions": [
+      {
+        "DN": "50",
+        "L": "200",
+        "D": "165",
+        "D1": "125",
+        "D2": "99",
+        "B-f": "20-3",
+        "Z-d": "4-19",
+        "H": "115"
+      },
+      {
+        "DN": "65",
+        "L": "240",
+        "D": "185",
+        "D1": "145",
+        "D2": "118",
+        "B-f": "20-3",
+        "Z-d": "4-19",
+        "H": "130"
+      },
+      {
+        "DN": "80",
+        "L": "260",
+        "D": "200",
+        "D1": "160",
+        "D2": "132",
+        "B-f": "22-3",
+        "Z-d": "8-19",
+        "H": "147"
+      },
+      {
+        "DN": "100",
+        "L": "300",
+        "D": "220",
+        "D1": "180",
+        "D2": "156",
+        "B-f": "24-3",
+        "Z-d": "8-19",
+        "H": "166"
+      },
+      {
+        "DN": "125",
+        "L": "350",
+        "D": "250",
+        "D1": "210",
+        "D2": "184",
+        "B-f": "26-3",
+        "Z-d": "8-19",
+        "H": "188"
+      },
+      {
+        "DN": "150",
+        "L": "400",
+        "D": "285",
+        "D1": "240",
+        "D2": "211",
+        "B-f": "26-3",
+        "Z-d": "8-23",
+        "H": "217"
+      },
+      {
+        "DN": "200",
+        "L": "500",
+        "D": "340",
+        "D1": "295",
+        "D2": "266",
+        "B-f": "30-3",
+        "Z-d": "12-23",
+        "H": "275"
+      },
+      {
+        "DN": "Column9"
+      },
+      {
+        "DN": "Column10"
+      }
+    ],
+    "materials": [
+      {
+        "no": "1",
+        "name": "Body",
+        "material": "GG25"
+      },
+      {
+        "no": "2",
+        "name": "Seat",
+        "material": "Brass"
+      },
+      {
+        "no": "3",
+        "name": "Disc seal ring",
+        "material": "Brass"
+      },
+      {
+        "no": "4",
+        "name": "disc",
+        "material": "GG25"
+      },
+      {
+        "no": "5",
+        "name": "Washer",
+        "material": "Carbon steel"
+      },
+      {
+        "no": "6",
+        "name": "Bolt",
+        "material": "Carbon steel"
+      },
+      {
+        "no": "7",
+        "name": "Rocker",
+        "material": "GGG40"
+      },
+      {
+        "no": "8",
+        "name": "Gasket",
+        "material": "Steel + graphite"
+      },
+      {
+        "no": "9",
+        "name": "Bonnet",
+        "material": "GG25"
+      },
+      {
+        "no": "10",
+        "name": "Bolt",
+        "material": "Carbon steel"
+      },
+      {
+        "no": "11",
+        "name": "Pin",
+        "material": "SS420"
+      },
+      {
+        "no": "12",
+        "name": "O-ring",
+        "material": "NBR"
+      },
+      {
+        "no": "13",
+        "name": "Screw plug",
+        "material": "Carbon steel"
+      }
+    ],
+    "description": "Face to face : DIN 3202 F6"
+  }
+}
